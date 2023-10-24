@@ -1,0 +1,111 @@
+*{
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+
+body {
+	--u:  2.25vmin;	
+	--c1: #333333; /* Dark gray color */
+	--c2: #222222; /* Darker gray color */
+	--c3: #111111; /* Darkest gray color */
+	--gp: 50%/calc(var(--u) * 5) calc(var(--u) * 10);
+	--bp: calc(var(--u) * -2.5) calc(var(--u) * -5);
+	height: 100vh;
+	--bg: 
+		radial-gradient(circle at 50% 25%, var(--c2)  15%, #fff0 30% 100%) var(--gp),
+		conic-gradient(from 270deg at 34% 46%, var(--c2) 0 12.5%, #fff0 0 100%) var(--gp),
+		conic-gradient(from 45deg at 66% 46%, var(--c2) 0 12.5%, #fff0 0 100%) var(--gp),
+		conic-gradient(from 180deg at 50% 80%, var(--c2) 0 12.5%, #fff0 0 100%) var(--gp),
+		conic-gradient(from 135deg at 50% 80%, var(--c2) 0 12.5%, #fff0 0 100%) var(--gp),
+		conic-gradient(from 0deg at 0% 20%, var(--c2) 0 12.5%, #fff0 0 100%) var(--gp),
+		conic-gradient(from -45deg at 100% 20%, var(--c2) 0 12.5%, #fff0 0 100%) var(--gp),
+		linear-gradient(180deg, var(--c2) 0 4.5%, #fff0 0 45.25%, var(--c2) 0 50%, #fff0 0% 100%) var(--gp),
+		radial-gradient(circle at 50% 25%, #fff0 0 25%, var(--c2) 26% 32%, #fff0 0 100%) var(--gp),
+		linear-gradient(165deg, var(--c3) 15%, var(--c1) 44%, #fff0 0 100%) var(--gp),
+		linear-gradient(180deg, var(--c1) 50%, #fff0 0 100%) var(--gp);
+	background: 
+		var(--bg), 
+		var(--bg);
+	background-position: 
+		var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), 
+		0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+}
+
+
+h1{
+    font-weight: bold;
+}
+
+hr{
+   width: 100%;
+   margin: 0;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    margin-top: 22px;
+}
+
+.left, .right-side{
+    vertical-align: middle;
+}
+
+div.col > div{
+    display: inline;
+}
+
+.outer-div, .inner-div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.outer-div{
+    width: 65px;
+}
+
+.left-side div {
+    margin-bottom: 19px;
+}
+
+input , button{
+    width: 322px ;
+}
+
+button{     
+    box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.48);
+}
+
+
+input{
+    outline: none;
+    color: black;
+    padding-left: 12px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.right-side{
+    
+}
+
+@media (max-width:821px) {
+    .right-side{
+        margin-top: 8px;
+        visibility: hidden;
+    }
+    .left{
+        border-width: 1px;
+        border-style: solid;
+        padding: 22px;
+        border-radius: 2px;
+        box-shadow: 0 0 62px 8px rgba(0,0,0,0.1);
+    }
+    
+}
